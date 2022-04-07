@@ -1,0 +1,24 @@
+﻿<h3>Пользователь (id : @Model.Id)</h3>
+<table>
+    <tr>
+        <td><p>Имя</p></td>
+        <td><p>Фамилия</p></td>
+        <td><p>Отчество</p></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><p>@Model.Name</p></td>
+        <td><p>@Model.Surname</p></td>
+        <td><p>@Model.Patronymic</p></td>
+    </tr>
+</table>
+<img src="~/Content/@Model.Photo" runat="server" />
+<img src="~/Content/@Model.Identifiers" runat="server" />
+
+<form method="post" action="~/api/v1/Accesscontrol/DeleteUser/@Model.Id">
+    <input type="submit" value="Удалить" />
+</form>
+
+<form method="get" action="~/api/v1/Accesscontrol/UsersPut/@Model.Id">
+    <input type="submit" value="Редактировать" />
+</form>

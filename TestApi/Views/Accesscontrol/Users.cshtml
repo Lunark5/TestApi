@@ -1,0 +1,19 @@
+﻿<h3>Пользователи</h3>
+<table>
+    <tr>
+        <td><p>Имя</p></td>
+        <td><p>Фамилия</p></td>
+        <td><p>Отчество</p></td>
+        <td></td>
+    </tr>
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td><p>@a.Name</p></td>
+            <td><p>@a.Surname</p></td>
+            <td><p>@a.Patronymic</p></td>
+            <td><p><a href="~/api/v1/Accesscontrol/Users/@a.Id">Информация</a></p></td>
+        </tr>
+    }
+    <td><p><a href="~/api/v1/Accesscontrol/AddUser">Добавить пользователя</a></p></td>
+</table>

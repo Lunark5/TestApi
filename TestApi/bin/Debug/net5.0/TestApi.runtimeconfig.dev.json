@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Lunark\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Lunark\\.nuget\\packages"
+    ]
+  }
+}
